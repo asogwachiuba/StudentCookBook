@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Student Cook Book</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="home_fragment">This is the home fragment</string>
+    <string name="option_fragment">This is the option fragment </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="snacks_fragment">This is the snacks fragment</string>
+    <string name="drink_fragment">This is the drink fragment</string>
+    <string name="nigerian_dishes_fragment">This is the nigerian dishes fragment</string>
+    <string name="nigerian_soups_fragment">This is the nigerian soup fragment</string>
+    <string name="text_size">25sp</string>
+    <string name="drink_btn_text">Home Made Drinks</string>
+    <string name="nigerian_dishes_btn_text">Nigerian Dishes</string>
+    <string name="nigerian_soups_btn_text">Nigerian Soups</string>
+    <string name="snacks_btn_text">Snacks</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

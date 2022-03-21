@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.studentcookbook.NigerianDishesFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/purple_500">
+
+            <!-- android:onClick="@{() -> recipieViewModel1.selectContent(2,1)}"
+            gradle-6.5-all.zip'. TODO: Update blank fragment layout -->
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/nigerian_dishes_list"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintTop_toBottomOf="@+id/nigerian_dishes_image"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <ImageView
+                android:id="@+id/nigerian_dishes_image"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintHeight_percent="0.3"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cookbookpicture8"
+                app:layout_constraintBottom_toTopOf="@+id/nigerian_dishes_list"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+          <!--
+            <Button
+                android:id="@+id/button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="39dp"
+                android:accessibilityLiveRegion="assertive"
+                android:elevation="20dp"
+                android:text="okro"
+                app:cornerRadius="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/button8"
+                app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@id/guideline1"
+                app:strokeColor="#3B130606"
+                app:strokeWidth="6dp" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="39dp"
+                android:accessibilityLiveRegion="assertive"
+                android:elevation="20dp"
+                android:text="bitterleaf"
+                app:cornerRadius="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/button9"
+                app:layout_constraintEnd_toEndOf="@+id/button"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/button"
+                app:strokeColor="#3B130606"
+                app:strokeWidth="6dp" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:accessibilityLiveRegion="assertive"
+                android:elevation="20dp"
+                android:text="egusi"
+                app:cornerRadius="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/button10"
+                app:layout_constraintEnd_toEndOf="@+id/button8"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/button8"
+                app:strokeColor="#3B130606"
+                app:strokeWidth="6dp" />
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="39dp"
+                android:accessibilityLiveRegion="assertive"
+                android:elevation="20dp"
+                android:text="oha"
+                app:cornerRadius="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/button11"
+                app:layout_constraintEnd_toEndOf="@+id/button9"
+                app:layout_constraintStart_toStartOf="@+id/button9"
+                app:strokeColor="#3B130606"
+                app:strokeWidth="6dp" />
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="39dp"
+                android:accessibilityLiveRegion="assertive"
+                android:elevation="20dp"
+                android:text="vegetable"
+                app:cornerRadius="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/button12"
+                app:layout_constraintEnd_toEndOf="@+id/button10"
+                app:layout_constraintStart_toStartOf="@+id/button10"
+                app:strokeColor="#3B130606"
+                app:strokeWidth="6dp" />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:accessibilityLiveRegion="assertive"
+                android:elevation="20dp"
+                android:text="nsala"
+                app:cornerRadius="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/button13"
+                app:layout_constraintEnd_toEndOf="@+id/button11"
+                app:layout_constraintStart_toStartOf="@+id/button11"
+                app:strokeColor="#3B130606"
+                app:strokeWidth="6dp" />
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:accessibilityLiveRegion="assertive"
+                android:elevation="20dp"
+                android:text="ogbono"
+                app:cornerRadius="15dp"
+                app:layout_constraintBottom_toTopOf="@id/guideline"
+                app:layout_constraintEnd_toEndOf="@id/button12"
+                app:layout_constraintStart_toStartOf="@id/button12"
+                app:strokeColor="#3B130606"
+                app:strokeWidth="6dp" />
+
+            <Button
+                android:id="@+id/button14"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="39dp"
+                android:accessibilityLiveRegion="assertive"
+                android:elevation="20dp"
+                android:text="pepper_soup"
+                app:cornerRadius="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/button15"
+                app:layout_constraintEnd_toStartOf="@+id/guideline5"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline4"
+                app:layout_constraintTop_toBottomOf="@id/guideline1"
+                app:strokeColor="#3B130606"
+                app:strokeWidth="6dp" />
+
+            <Button
+                android:id="@+id/button15"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="39dp"
+                android:accessibilityLiveRegion="assertive"
+                android:elevation="20dp"
+                android:text="afang"
+                app:cornerRadius="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/button16"
+                app:layout_constraintEnd_toEndOf="@+id/button14"
+                app:layout_constraintStart_toStartOf="@id/button14"
+                app:strokeColor="#3B130606"
+                app:strokeWidth="6dp" />
+
+            <Button
+                android:id="@+id/button16"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:accessibilityLiveRegion="assertive"
+                android:elevation="20dp"
+                android:text="okazi"
+                app:cornerRadius="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/button17"
+                app:layout_constraintEnd_toEndOf="@+id/button15"
+                app:layout_constraintStart_toStartOf="@+id/button15"
+                app:strokeColor="#3B130606"
+                app:strokeWidth="6dp" />
+
+            <Button
+                android:id="@+id/button17"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="39dp"
+                android:accessibilityLiveRegion="assertive"
+                android:elevation="20dp"
+                android:text="gbegiri"
+                app:cornerRadius="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/button18"
+                app:layout_constraintEnd_toEndOf="@+id/button16"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/button16"
+                app:strokeColor="#3B130606"
+                app:strokeWidth="6dp" />
+
+            <Button
+                android:id="@+id/button18"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="39dp"
+                android:accessibilityLiveRegion="assertive"
+                android:elevation="20dp"
+                android:text="efo_riro"
+                app:cornerRadius="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/button19"
+                app:layout_constraintEnd_toEndOf="@+id/button17"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/button17"
+                app:strokeColor="#3B130606"
+                app:strokeWidth="6dp" />
+
+            <Button
+                android:id="@+id/button19"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:accessibilityLiveRegion="assertive"
+                android:elevation="20dp"
+                android:text="banga"
+                app:cornerRadius="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/button20"
+                app:layout_constraintEnd_toEndOf="@+id/button18"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/button18"
+                app:strokeColor="#3B130606"
+                app:strokeWidth="6dp" />
+
+            <Button
+                android:id="@+id/button20"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:accessibilityLiveRegion="assertive"
+                android:elevation="20dp"
+                android:text="ofe_owerri"
+                app:cornerRadius="15dp"
+                app:layout_constraintBottom_toTopOf="@id/guideline"
+                app:layout_constraintEnd_toEndOf="@id/button19"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@id/button19"
+                app:strokeColor="#3B130606"
+                app:strokeWidth="6dp" />  -->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

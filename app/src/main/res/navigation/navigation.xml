@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.studentcookbook.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_optionFragment"
+            app:destination="@id/optionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/optionFragment"
+        android:name="com.example.studentcookbook.OptionFragment"
+        android:label="fragment_option"
+        tools:layout="@layout/fragment_option" >
+        <action
+            android:id="@+id/action_optionFragment_to_snacksFragment"
+            app:destination="@id/snacksFragment" />
+        <action
+            android:id="@+id/action_optionFragment_to_nigerianSoupsFragment"
+            app:destination="@id/nigerianSoupsFragment" />
+        <action
+            android:id="@+id/action_optionFragment_to_drinkFragment"
+            app:destination="@id/drinkFragment" />
+        <action
+            android:id="@+id/action_optionFragment_to_nigerianDishesFragment"
+            app:destination="@id/nigerianDishesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/drinkFragment"
+        android:name="com.example.studentcookbook.DrinkFragment"
+        android:label="fragment_drink"
+        tools:layout="@layout/fragment_drink" >
+        <action
+            android:id="@+id/action_drinkFragment_to_drinkDescriptionFragment"
+            app:destination="@id/drinkDescriptionFragment" />
+        <action
+            android:id="@+id/action_drinkFragment_to_recipieDescriptionFragment"
+            app:destination="@id/recipieDescriptionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nigerianDishesFragment"
+        android:name="com.example.studentcookbook.NigerianDishesFragment"
+        android:label="fragment_nigerian_dishes"
+        tools:layout="@layout/fragment_nigerian_dishes" >
+        <action
+            android:id="@+id/action_nigerianDishesFragment_to_recipieDescriptionFragment"
+            app:destination="@id/recipieDescriptionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nigerianSoupsFragment"
+        android:name="com.example.studentcookbook.NigerianSoupsFragment"
+        android:label="fragment_nigerian_soups"
+        tools:layout="@layout/fragment_nigerian_soups" >
+        <action
+            android:id="@+id/action_nigerianSoupsFragment_to_recipieDescriptionFragment"
+            app:destination="@id/recipieDescriptionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/snacksFragment"
+        android:name="com.example.studentcookbook.SnacksFragment"
+        android:label="fragment_snacks"
+        tools:layout="@layout/fragment_snacks" >
+        <action
+            android:id="@+id/action_snacksFragment_to_recipieDescriptionFragment"
+            app:destination="@id/recipieDescriptionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/drinkDescriptionFragment"
+        android:name="com.example.studentcookbook.DrinkDescriptionFragment"
+        android:label="fragment_drink_description"
+        tools:layout="@layout/fragment_drink_description" />
+    <fragment
+        android:id="@+id/recipieDescriptionFragment"
+        android:name="com.example.studentcookbook.RecipieDescriptionFragment"
+        android:label="fragment_recipie_description"
+        tools:layout="@layout/fragment_recipie_description" >
+        <argument
+            android:name="recipe_name"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="Edit" />
+    </fragment>
+</navigation>
